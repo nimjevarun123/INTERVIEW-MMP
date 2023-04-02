@@ -10,7 +10,7 @@ def predict():
     return render_template("nfl.html")   
     
 
-@app.route("/find", methods=['POST'])
+@app.route("/find", methods=["POST","get"])
 def football():
     input = request.form
     print (f'DATA = {input}')
